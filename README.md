@@ -1,2 +1,3 @@
 # linkedin-polymer-app
-Just test polymer app for linkedin design
+
+polymer app for design https://www.behance.net/gallery/19738707/Linkedin-Material-Design 

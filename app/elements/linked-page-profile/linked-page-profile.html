@@ -1,8 +1,47 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/core-icons/communication-icons.html">
+<link rel="import" href="../../bower_components/core-image/core-image.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-shadow/paper-shadow.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tab.html">
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html">
+
+<link rel="import" href="../mdi/mdi.html">
+
 <polymer-element name="linked-page-profile" attributes="">
   <template>
     <link rel="stylesheet" href="linked-page-profile.css">
+
+    <paper-shadow class="card" vertical layout>
+      <nav horizontal layout>
+        <div flex></div>
+        <paper-icon-button icon="communication:email"></paper-icon-button>
+        <paper-icon-button icon="more-vert"></paper-icon-button>
+      </nav>
+      <section class="header" horizontal layout>
+        <core-image class="avatar"
+                    src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/005/04f/2d3/28a05f3.jpg"
+                    width="112"
+                    height="112"
+                    sizing="cover"
+          ></core-image>
+      </section>
+      <paper-fab icon="mdi:account-plus" self-end></paper-fab>
+      <nav>
+        <paper-tabs>
+          <paper-tab>Background</paper-tab>
+          <paper-tab>Connections</paper-tab>
+          <paper-tab>Recommendations</paper-tab>
+          <paper-tab>Groups</paper-tab>
+          <paper-tab>Following</paper-tab>
+          <paper-tab>Recent Activity</paper-tab>
+        </paper-tabs>
+      </nav>
+    </paper-shadow>
+
   </template>
   <script>
     (function () {

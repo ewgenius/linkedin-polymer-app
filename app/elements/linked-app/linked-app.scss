@@ -18,7 +18,9 @@ paper-tabs {
     }
   }
 }
-
-.content {
-  padding: 16px;
+@media screen and (min-width: 640px) {
+  .content {
+    padding: 16px;
+  }
 }
+
