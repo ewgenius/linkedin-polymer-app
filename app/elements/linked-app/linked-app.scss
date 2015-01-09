@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+:host {
+  display: block;
+}
+
+core-toolbar {
+  background-color: $main-color;
+  color: #fff;
+}
+
+paper-tabs {
+  height: 100%;
+  paper-tab {
+    min-width: 100px;
+    &::shadow #ink {
+      color: $accent-color;
+    }
+  }
+}
+
+.content {
+  padding: 16px;
+}
