@@ -34,11 +34,15 @@
     border-radius: 100%;
   }
 
+  .info {
+    padding-left: 56px;
+  }
+
   section {
     border-bottom: 1px solid $background-color;
 
     &.header {
-      padding: 0 56px;
+      padding: 0 56px 28px;
     }
   }
 }

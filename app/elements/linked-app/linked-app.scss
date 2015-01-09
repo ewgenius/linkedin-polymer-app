@@ -4,6 +4,10 @@
   display: block;
 }
 
+core-header-panel[drawer] {
+  background-color: #fff;
+}
+
 core-toolbar {
   background-color: $main-color;
   color: #fff;
