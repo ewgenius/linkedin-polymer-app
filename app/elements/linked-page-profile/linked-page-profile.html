@@ -1,6 +1,8 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
 <link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/core-animated-pages/core-animated-pages.html">
+<link rel="import" href="../../bower_components/core-animated-pages/transitions/slide-from-right.html">
 <link rel="import" href="../../bower_components/core-icons/communication-icons.html">
 <link rel="import" href="../../bower_components/core-image/core-image.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
@@ -23,28 +25,56 @@
       </nav>
       <section class="header" horizontal layout>
         <core-image class="avatar"
-                    src="https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/005/04f/2d3/28a05f3.jpg"
+                    src="https://media.licdn.com/media/p/5/005/04f/2d3/28a05f3.jpg"
                     width="112"
                     height="112"
+                    preload
                     sizing="cover"></core-image>
+
         <div class="info" vertical layout>
           <h1>Rico Monteiro</h1>
+
           <div horizontal layout>
 
           </div>
         </div>
       </section>
       <paper-fab icon="mdi:account-plus" self-end></paper-fab>
-      <nav>
-        <paper-tabs>
-          <paper-tab>Background</paper-tab>
-          <paper-tab>Connections</paper-tab>
-          <paper-tab>Recommendations</paper-tab>
-          <paper-tab>Groups</paper-tab>
-          <paper-tab>Following</paper-tab>
-          <paper-tab>Recent Activity</paper-tab>
-        </paper-tabs>
-      </nav>
+
+      <div class="main" vertical layout>
+        <nav>
+          <paper-tabs selected="{{selectedPage}}">
+            <paper-tab>Background</paper-tab>
+            <paper-tab>Connections</paper-tab>
+            <paper-tab>Recommendations</paper-tab>
+            <paper-tab>Groups</paper-tab>
+            <paper-tab>Following</paper-tab>
+            <paper-tab>Recent Activity</paper-tab>
+          </paper-tabs>
+        </nav>
+
+        <core-animated-pages transitions="slide-from-right" selected="{{selectedPage}}">
+          <section>
+            <div class="page">1</div>
+          </section>
+          <section>
+            <div class="page">1</div>
+          </section>
+          <section>
+            <div class="page">1</div>
+          </section>
+          <section>
+            <div class="page">1</div>
+          </section>
+          <section>
+            <div class="page">1</div>
+          </section>
+          <section>
+            <div class="page">1</div>
+          </section>
+
+        </core-animated-pages>
+      </div>
     </paper-shadow>
 
   </template>

@@ -6,6 +6,7 @@
 <link rel="import" href="../../bower_components/core-icons/core-icons.html">
 <link rel="import" href="../../bower_components/core-menu/core-menu.html">
 <link rel="import" href="../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../bower_components/core-item/core-item.html">
 <link rel="import" href="../../bower_components/core-icons/communication-icons.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
@@ -20,11 +21,20 @@
 
     <core-drawer-panel forceNarrow>
       <core-header-panel drawer>
-        <core-toolbar class="medium-tall">
-
+        <core-toolbar class="tall">
+          <div class="bottom fit" horizontal layout>
+            <div flex></div>
+            <paper-icon-button icon="communication:email"></paper-icon-button>
+          </div>
         </core-toolbar>
         <core-menu>
-          <paper-item icon="mdi:eye"></paper-item>
+          <core-item icon="mdi:eye">Who's viewed your profile</core-item>
+          <core-item icon="mdi:account-multiple">Connections</core-item>
+          <core-item icon="mdi:briefcase">Jobs</core-item>
+          <core-item icon="mdi:account-multiple-plus">People you may know</core-item>
+          <core-item icon="mdi:home-modern">Companies</core-item>
+          <core-item icon="mdi:message-processing">Groups</core-item>
+          <core-item icon="settings">Settings</core-item>
         </core-menu>
       </core-header-panel>
 

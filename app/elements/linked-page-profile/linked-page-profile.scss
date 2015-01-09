@@ -38,6 +38,14 @@
     padding-left: 56px;
   }
 
+  .main {
+    padding: 0 56px;
+
+     section {
+      position: relative;
+    }
+  }
+
   section {
     border-bottom: 1px solid $background-color;
 
