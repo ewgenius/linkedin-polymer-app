@@ -42,7 +42,6 @@
         <core-toolbar>
           <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
 
-
           <paper-tabs self-end selected="0">
             <paper-tab>Profile</paper-tab>
             <paper-tab>Connections</paper-tab>
@@ -59,8 +58,13 @@
           <paper-icon-button icon="more-vert"></paper-icon-button>
         </core-toolbar>
 
-        <div class="content">
-          <linked-page-profile></linked-page-profile>
+        <div horizontal layout>
+          <div class="content" flex>
+            <linked-page-profile></linked-page-profile>
+          </div>
+          <div class="sidebar">
+            side content
+          </div>
         </div>
 
       </core-header-panel>
